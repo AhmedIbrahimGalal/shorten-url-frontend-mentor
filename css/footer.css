@@ -1,0 +1,45 @@
+@import url(./variables.css);
+
+.footer {
+	min-height: 15rem;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: var(--dark-violet);
+	padding-top: 3rem;
+	padding-bottom: 2rem;
+}
+.footer .footer-logo,
+.footer .footer-links,
+.footer .socialmedia {
+	width: 20%;
+}
+.footer .footer-links {
+	display: flex;
+	flex-direction: column;
+}
+.footer .socialmedia {
+	padding-top: 1.3rem;
+}
+.footer .footer-links h3 {
+	color: var(--white);
+	font-weight: 500;
+}
+.footer .footer-links a {
+	color: var(--grayish-violet);
+	width: fit-content;
+}
+.footer .socialmedia a:not(:last-child) {
+	margin-right: 1rem;
+}
+
+@media (max-width: 23.4375rem) {
+	.footer .footer-logo,
+	.footer .footer-links,
+	.footer .socialmedia {
+		width: 100%;
+		text-align: center;
+	}
+	.footer .footer-links {
+		align-items: center;
+	}
+}
